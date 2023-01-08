@@ -1,0 +1,36 @@
+:root {
+	/* fonts */
+	--inter: 'Inter', sans-serif;
+	--raleway: 'Raleway', sans-serif;
+
+	/* font weight */
+	--regular: 400;
+	--medium: 500;
+	--bold: 700;
+	--bold-italic: 700 italic;
+
+	--gravity-main: #000;
+	--gravity-bg: #141619;
+	--gravity-text: #fff;
+	--gravity-blue: #665dcd;
+	--gravity-blue-light: #5fa4e6;
+	--gravity-green: #00d1b2;
+	--gravity-yellow: #d2ab67;
+}
+
+body {
+	font-family: var(--inter);
+	& h1 {
+		font-family: var(--raleway);
+		font-weight: var(--bold);
+	}
+}
+
+main {
+	border-radius: 1.2rem;
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	flex-direction: column;
+	overflow: hidden;
+}
