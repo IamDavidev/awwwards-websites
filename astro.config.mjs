@@ -7,6 +7,7 @@ import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 
 // https://astro.build/config
+
 import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
