@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CoinsSlider from './layouts/CoinsSlider.astro';
+import Header from './layouts/Header.svelte';
+---
+
+<Layout title='Gravity Team'>
+	<main>
+		<header>
+			<Header />
+			<CoinsSlider />
+		</header>
+
+		<style>
+			main {
+				background-color: var(--gravity-bg);
+			}
+			header {
+				display: flex;
+				justify-items: space-between;
+				gap: 3rem;
+				align-items: center;
+				flex-direction: column;
+				margin-bottom: 2rem;
+			}
+		</style>
+	</main>
+</Layout>
