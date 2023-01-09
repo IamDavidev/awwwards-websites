@@ -7,12 +7,8 @@
 <div class="container">
 	<img src={image} alt={name} class="image-coin" />
 	<div class="coin-data">
-		<span>
-			{name}
-		</span>
-		<span>
-			{current_price}
-		</span>
+		<span> ${current_price}USD </span>
+		<span> {name} </span>
 	</div>
 </div>
 
@@ -21,6 +17,7 @@
 		width: 30px;
 		height: 30px;
 	}
+
 	.container {
 		display: flex;
 		flex-direction: row;
