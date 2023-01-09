@@ -1,7 +1,11 @@
 ---
 import '../styles/global.css';
+import '../styles/fonts.css';
+
 export interface Props {
 	title: string;
+	favicon?: string;
+	description?: string;
 }
 
 const { title } = Astro.props;

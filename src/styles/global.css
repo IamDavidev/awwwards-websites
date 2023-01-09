@@ -13,10 +13,14 @@
 	/* font size */
 	--title: 72px;
 	--subtitle: 56px;
+	--text-3xl: 32px;
+	--text-2xl: 24px;
 	--text-xl : 20px
 	--text-lg: 18px;
 	--text: 16px;
 	--text-sm: 12px;
+
+	--lh-subtitle: 32px;
 
 	/* colors */
 	--gravity-main: #000;
@@ -26,6 +30,9 @@
 	--gravity-blue-light: #5fa4e6;
 	--gravity-green: #00d1b2;
 	--gravity-yellow: #d2ab67;
+
+	/* media queries */
+	--max-wrapper: 1120px;
 }
 
 
@@ -41,11 +48,12 @@ body {
 
 main {
 	border-radius: 1.2rem;
-	display: flex;
 	min-height: 100vh;
-	justify-content: center;
-	flex-direction: column;
 	overflow: hidden;
+	& .container {
+		max-width: var(--max-wrapper);
+	 	margin:1rem auto 
+	}
 }
 
 /* flex class */
