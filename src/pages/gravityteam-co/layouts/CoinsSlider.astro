@@ -71,25 +71,12 @@ const coins = await getCoins();
 		align-items: center;
 	}
 	.list-coins {
+		max-height: 120px;
+		overflow: hidden;
 		width: 100%;
 		overflow: hidden;
 		padding: 0.5rem 0;
 		position: relative;
-	}
-	.list-coins::after {
-		content: '';
-		display: block;
-		width: 1rem;
-		height: 1rem;
-		background-color: var(--gravity-bg);
-		position: absolute;
-	}
-	.list-coins::before {
-		content: '';
-		display: block;
-		width: 1rem;
-		height: 1rem;
-		position: absolute;
 	}
 
 	.list-coins li {
@@ -102,6 +89,7 @@ const coins = await getCoins();
 		padding: 1rem 1.5rem;
 		text-align: center;
 		text-transform: uppercase;
+		border-radius: 0.5rem;
 		& span {
 			color: var(--gravity-bg);
 			font-weight: var(--bold);
