@@ -51,7 +51,7 @@
 	<div class="grid-about">
 		{#each dataAbout as data}
 			<div class="grid-item ">
-				<div class="grid-data f-c-c-c">
+				<div class="grid-data f-c-c-c duration-500">
 					<h3>{data.title}</h3>
 					<span>{data.text}</span>
 				</div>
@@ -91,7 +91,7 @@
 		min-height: 180px;
 		max-height: 180px;
 		border-radius: 8px;
-		padding: 4px;
+		padding: 2px;
 		background-image: linear-gradient(
 			90deg,
 			var(--gravity-blue),
@@ -112,9 +112,12 @@
 		border-radius: 8px;
 		padding: 1rem;
 		background-color: var(--gravity-bg);
-		transition: hover 5s linear;
+		transition: all 0.5s ease-in;
+		transform-origin: center;
+		transition-duration: 0.5s;
 	}
 	.grid-data:hover {
+		transition: all 0.5s ease-in;
 		background-image: linear-gradient(
 			-45deg,
 			var(--gravity-blue),
