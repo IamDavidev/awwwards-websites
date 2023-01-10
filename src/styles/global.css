@@ -9,13 +9,13 @@
 	--medium: 500;
 	--bold: 700;
 	--bold-italic: 700 italic;
-	
+
 	/* font size */
 	--title: 72px;
 	--subtitle: 56px;
 	--text-3xl: 32px;
 	--text-2xl: 24px;
-	--text-xl : 20px
+	--text-xl: 20px;
 	--text-lg: 18px;
 	--text: 16px;
 	--text-sm: 12px;
@@ -35,9 +35,6 @@
 	--max-wrapper: 1120px;
 }
 
-
-
-
 body {
 	font-family: var(--inter);
 	& h1 {
@@ -52,19 +49,23 @@ main {
 	overflow: hidden;
 	& .container {
 		max-width: var(--max-wrapper);
-	 	margin:1rem auto 
+		margin: 1rem auto;
 	}
+}
+section {
+	position: relative;
+	z-index: 9;
 }
 
 /* flex class */
 
-.f-c-c-r{
+.f-c-c-r {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
 }
-.f-c-c-c{
+.f-c-c-c {
 	display: flex;
 	justify-content: center;
 	align-items: center;
