@@ -42,7 +42,7 @@
 		Our partnerships have delivered great value to our projects and we’re happy
 		to share some of their feedback below
 	</p>
-	<div>
+	<div class="nav">
 		<button on:click={handlePrevTestimonial}>
 			<svg
 				width="58"
@@ -179,6 +179,12 @@
 	.testimonials-title {
 		font-size: var(--subtitle);
 		font-weight: var(--bold);
+	}
+	.nav {
+		display: flex;
+		gap: 1.5rem;
+		justify-content: center;
+		align-items: center;
 	}
 	.testimonials-description {
 		max-width: 600px;
