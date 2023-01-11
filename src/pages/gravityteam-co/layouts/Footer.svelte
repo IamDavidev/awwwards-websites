@@ -3,13 +3,13 @@
 	<div class="f-header">
 		<ul>
 			<li>
-				<spna>Gravity Team</spna>
+				<span>Gravity Team</span>
 			</li>
 			<li>
-				<spna> About Us</spna>
+				<span> About Us</span>
 			</li>
 			<li>
-				<spna>Work With us</spna>
+				<span>Work With us</span>
 			</li>
 		</ul>
 		<div class="f">
@@ -49,6 +49,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-top: 5rem;
+		margin-bottom: 2rem;
 	}
 	:global(.divider) {
 		width: 100%;
