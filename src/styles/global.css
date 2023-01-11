@@ -33,6 +33,10 @@
 
 	/* media queries */
 	--max-wrapper: 1120px;
+
+	/* divider */
+	--divider-color: #fff;
+	--divider-margin: 3rem 0;
 }
 
 body {
