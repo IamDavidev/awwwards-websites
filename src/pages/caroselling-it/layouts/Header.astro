@@ -1,0 +1,91 @@
+<header class='container'>
+	<div class='contianer-title'>
+		<h1 class='title'>
+			<span class='block'> Caroselling</span>
+			<span class='block'> digital studio for</span>
+			<div class='block effect-before'>
+				<span> human experiences</span>
+			</div>
+		</h1>
+		<!-- remove muted -->
+		<video class='header-title' autoplay loop playsinline muted>
+			<source src='/caroselling-it/header-video.mp4' type='video/mp4' />
+		</video>
+	</div>
+	<div class='modal'>
+		<p>
+			Usiamo il design per mettere al
+			<span> centro le persone e le loro scelte.</span>
+		</p>
+		<p>
+			Realizziamo
+			<span> siti web, brand identity e contenuti creativi</span>
+			che prendono per mano i tuoi clienti e li portano
+			<span> verso di te.</span>
+		</p>
+	</div>
+</header>
+
+<style>
+	.container {
+		position: relative;
+	}
+	.container-title {
+		position: relative;
+	}
+	.header-title {
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		width: 100%;
+		height: auto;
+		max-width: 640px;
+		object-fit: cover;
+		height: 320px;
+		border-radius: 0.5rem;
+		z-index: 6;
+	}
+	.title {
+		position: relative;
+		z-index: 9;
+		font-size: var(--title-xl);
+	}
+	.effect-before {
+		position: relative;
+		& span {
+			position: relative;
+			z-index: 9;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 1rem;
+			left: 0;
+			width: 35%;
+			height: 48px;
+			border-radius: 2px;
+			z-index: 6;
+			background: var(--caro-secondary);
+		}
+	}
+	.modal {
+		position: absolute;
+		top: 2.5rem;
+		right: 0;
+		max-width: 340px;
+		background-color: #070707;
+		border-radius: 1rem;
+		padding: 1rem;
+		& p:first-child {
+			margin-bottom: 1rem;
+			opacity: 0.8;
+		}
+		& p {
+			& span {
+				font-weight: var(--bold);
+				font-size: var(--text-lg);
+				opacity: 1;
+			}
+		}
+	}
+</style>
