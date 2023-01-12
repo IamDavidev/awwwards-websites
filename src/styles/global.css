@@ -11,6 +11,8 @@
 	--bold-italic: 700 italic;
 
 	/* font size */
+	--title-xl: 112px;
+	--title-lg: 96px;
 	--title: 72px;
 	--subtitle: 56px;
 	--text-3xl: 32px;
@@ -22,7 +24,7 @@
 
 	--lh-subtitle: 32px;
 
-	/* colors */
+	/* colors  gravity */
 	--gravity-main: #000;
 	--gravity-bg: #141619;
 	--gravity-text: #fff;
@@ -30,6 +32,13 @@
 	--gravity-blue-light: #5fa4e6;
 	--gravity-green: #00d1b2;
 	--gravity-yellow: #d2ab67;
+
+	/* colors caro */
+
+	--caro-main: #000;
+	--caro-primary: #fff;
+	--caro-secondary: #0045ff;
+	--caro-effect: #3391ff;
 
 	/* media queries */
 	--max-wrapper: 1120px;
@@ -74,4 +83,7 @@ section {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+.block {
+	display: block;
 }
