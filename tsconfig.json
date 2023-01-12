@@ -17,8 +17,8 @@
       "@layouts/*": [
         "src/layouts/*"
       ],
-      "@posts/*": [
-        "src/pages/posts/*"
+      "@utils/*": [
+        "src/utils/*"
       ],
       "~/*": [
         "src/*"
