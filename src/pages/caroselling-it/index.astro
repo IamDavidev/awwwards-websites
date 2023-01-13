@@ -1,19 +1,23 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import Description from './layouts/Description.astro';
 import Header from './layouts/Header.astro';
 import Navbar from './layouts/Navbar.astro';
+import Servizi from './layouts/Servizi.astro';
 ---
 
 <Layout title='caroselling-it'>
 	<main>
 		<Navbar />
 		<Header />
+		<Description />
+		<Servizi />
 	</main>
 </Layout>
 
 <style>
 	main {
-		padding: 1rem 60px;
+		padding: 76px 48px;
 		background-color: var(--caro-main);
 		color: var(--caro-primary);
 	}

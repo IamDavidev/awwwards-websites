@@ -62,7 +62,6 @@ main {
 	overflow: hidden;
 	& .container {
 		max-width: var(--max-wrapper);
-		margin: 1rem auto;
 	}
 }
 section {
