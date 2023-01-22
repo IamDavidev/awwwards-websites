@@ -21,7 +21,7 @@ import Testimonails from './layouts/Testimonails.svelte';
 				<Header />
 				<CoinsSlider />
 			</header>
-			<About />
+			<About client:only />
 			<MarketMarking />
 			<Exchnages />
 			<Partners client:load />
@@ -31,6 +31,9 @@ import Testimonails from './layouts/Testimonails.svelte';
 			<Footer />
 
 			<style>
+				.container {
+					margin: 3rem auto;
+				}
 				main {
 					background-color: var(--gravity-bg);
 				}
