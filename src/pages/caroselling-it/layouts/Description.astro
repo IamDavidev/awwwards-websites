@@ -6,10 +6,10 @@
 				le grandi cose, come le piccole, tutto ci appassiona.
 			</h2>
 			<div class='description'>
-				<p>
-					ogni giorno nutriamo l’ambizione di
-					<span>semplificare la complessità.</span>
-				</p>
+				<div>
+					<p>ogni giorno nutriamo l’ambizione di</p>
+					<p class='e-blue'><span>semplificare la complessità.</span></p>
+				</div>
 				<p>
 					non amiamo i compromessi, le risposte standard per qualsiasi problema,
 					ma solo la soluzione studiata e giusta per te.
@@ -17,10 +17,12 @@
 				<p>
 					crediamo nelle idee che sappiano abbracciare una visione strategica.
 				</p>
-				<p>
-					ti diremo che faremo delle cose, e poi le faremo
-					<span> davvero.</span>
-				</p>
+				<div>
+					<p>ti diremo che faremo delle cose,</p>
+					<p class='e-blue'>
+						<span> e poi le faremo davvero.</span>
+					</p>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -33,6 +35,7 @@
 			flex-direction: row;
 		}
 		.container-des {
+			opacity: 0;
 			gap: 1rem;
 			justify-content: space-between;
 			margin-top: var(--divider-top);
@@ -60,15 +63,34 @@
 					width: auto;
 					position: relative;
 					z-index: 12;
-					background-color: var(--caro-secondary);
+					/* background-color: var(--caro-secondary); */
 				}
 			}
 		}
+
 		.description {
 			font-size: var(--text-lg);
 			font-weight: var(--medium);
 			& p {
 				margin-bottom: 0.5rem;
+			}
+		}
+		.e-blue {
+			display: block;
+			position: relative;
+			&::after {
+				position: absolute;
+				bottom: 0;
+				z-index: 10;
+				left: 0;
+				content: '';
+				width: 180px;
+				height: 50%;
+				background-color: var(--caro-secondary);
+			}
+			& span {
+				position: relative;
+				z-index: 12;
 			}
 		}
 	</style>
