@@ -45,17 +45,18 @@ const coins = await getCoins();
         }'
 	>
 		{
-			coins.map((coin: any) => {
-				return (
-					<li>
-						<CoinItem
-							name={coin.name}
-							image={coin.image}
-							current_price={coin.current_price}
-						/>
-					</li>
-				);
-			})
+			coins &&
+				coins.map((coin: any) => {
+					return (
+						<li>
+							<CoinItem
+								name={coin.name}
+								image={coin.image}
+								current_price={coin.current_price}
+							/>
+						</li>
+					);
+				})
 		}
 	</ul>
 </div>
