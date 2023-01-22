@@ -50,8 +50,8 @@
 	</p>
 	<div class="grid-about">
 		{#each dataAbout as data}
-			<div class="grid-item ">
-				<div class="grid-data f-c-c-c duration-500">
+			<div class="grid-item">
+				<div class="grid-data f-c-c-c">
 					<h3>{data.title}</h3>
 					<span>{data.text}</span>
 				</div>
@@ -117,13 +117,13 @@
 		transition-duration: 0.5s;
 	}
 	.grid-data:hover {
-		transition: all 0.5s ease-in;
 		background-image: linear-gradient(
 			-45deg,
 			var(--gravity-blue),
 			var(--gravity-blue-light),
 			var(--gravity-yellow)
 		);
+		transition: all 0.5s ease-in;
 	}
 	.grid-data span {
 		font-size: var(--text-lg);
