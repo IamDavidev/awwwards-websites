@@ -8,12 +8,12 @@ export function fadeOut(el: HTMLElement): void {
 	animate(el, { opacity: [1, 0] }, { duration: 2 });
 }
 
-export const animateFadeIn = (element: HTMLElement): void => {
-	fadeIn(element);
-};
+export function slideInWithFadeIn(el: HTMLElement): void {
+	animate(el, { x: [-100, 0] }, { duration: 2 });
+	fadeIn(el);
+}
 
-export function animateAllFadeIn(elements: NodeListOf<HTMLElement>): void {
-	elements.forEach(element => {
-		fadeIn(element);
-	});
+export function slideBottomWithFadeIn(el: HTMLElement): void {
+	animate(el, { y: [100, 0] }, { duration: 2 });
+	fadeIn(el);
 }

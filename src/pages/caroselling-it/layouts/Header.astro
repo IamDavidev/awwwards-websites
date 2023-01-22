@@ -1,6 +1,6 @@
 <header class='container'>
 	<div class='contianer-title'>
-		<h1 class='title'>
+		<h1 class='title header-title'>
 			<span class='block'> Caroselling</span>
 			<span class='block'> digital studio for</span>
 			<div class='block effect-before'>
@@ -40,8 +40,18 @@
 			</svg>
 		</button>
 	</section>
-	<script defer>
+	<script
+		type='module'
+		src={(await import('../utils/animations.ts?url')).default}
+	></script>
+	<script defer type='module'>
 		const EVENT_CLICK = 'click';
+
+		const $video = document.querySelector('.header-video');
+		const $btnToggle = document.querySelector('.toggle-muted');
+
+		const $modal = document.querySelector('.modal');
+		console.info('🚀 ~>  file: Header.astro:52 ~>  modal', $modal);
 
 		function toggleMuted() {
 			if ($video === null) return;
@@ -50,15 +60,15 @@
 			$video.muted = !$video.muted;
 		}
 
+		// animate('')
+
 		/**
 		 * {$video} HTMLVideoELement
 		 */
-		const $video = document.querySelector('.header-video');
 
 		/**
 		 * {$btnToggle} HTMLButtonElement
 		 */
-		const $btnToggle = document.querySelector('.toggle-muted');
 
 		$btnToggle.addEventListener(EVENT_CLICK, toggleMuted);
 	</script>
