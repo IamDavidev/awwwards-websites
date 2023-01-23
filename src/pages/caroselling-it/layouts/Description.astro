@@ -1,9 +1,20 @@
+---
+interface Props {
+	sub: string;
+	title: string;
+}
+
+const { sub, title } = Astro.props as Props;
+---
+
 <section class='container-des f-s-r'>
 	<header class='header f-s-r'>
-		<span class='sub'>(noi)</span>
+		<span class='sub'>
+			{sub}
+		</span>
 		<div class='container-data'>
 			<h2 class='title'>
-				le grandi cose, come le piccole, tutto ci appassiona.
+				{title}
 			</h2>
 			<div class='description'>
 				<div>
