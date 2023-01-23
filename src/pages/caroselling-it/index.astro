@@ -4,21 +4,14 @@ import Description from './layouts/Description.astro';
 import Header from './layouts/Header.astro';
 import Navbar from './layouts/Navbar.astro';
 import Servizi from './layouts/Servizi.astro';
+import WrapperAnimations from './layouts/WrapperAnimations.astro';
 ---
 
 <Layout title='caroselling-it'>
-	<main>
+	<WrapperAnimations>
 		<Navbar />
 		<Header />
 		<Description />
 		<Servizi />
-	</main>
+	</WrapperAnimations>
 </Layout>
-
-<style>
-	main {
-		padding: 76px 48px;
-		background-color: var(--caro-main);
-		color: var(--caro-primary);
-	}
-</style>

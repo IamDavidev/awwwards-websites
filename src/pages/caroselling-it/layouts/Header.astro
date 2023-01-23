@@ -40,10 +40,10 @@
 			</svg>
 		</button>
 	</section>
-	<script
+	<!-- <script
 		type='module'
 		src={(await import('../utils/animations.ts?url')).default}
-	></script>
+	></script> -->
 	<script defer type='module'>
 		const EVENT_CLICK = 'click';
 
@@ -121,11 +121,11 @@
 	}
 	.modal {
 		position: absolute;
-		top: 6rem;
-		right: -3rem;
-		max-width: 296px;
+		top: 8rem;
+		right: -8rem;
+		max-width: 380px;
 		z-index: 7;
-		background-color: #070707;
+		backdrop-filter: blur(16px);
 		border-radius: 1rem;
 		padding: 1rem;
 		& p:first-child {
