@@ -14,7 +14,7 @@ const $modal = $('.modal') as HTMLElement;
 
 const $servizi = $('.ani-servizi') as HTMLElement;
 
-const $sectionDescription = $('.container-des') as HTMLElement;
+const $sectionsDescription = $$('.container-des');
 
 const $wrapperImg = $('.ani-ind') as HTMLElement;
 const $imgParallax = $('.parallax-img') as HTMLElement;
@@ -26,8 +26,10 @@ slideInWithFadeIn($headerTitle);
 fadeIn($headerVideo);
 fadeIn($modal);
 
-inView($sectionDescription, (_inf): void => {
-	slideInWithFadeIn($sectionDescription);
+$sectionsDescription.forEach(section => {
+	inView(section, (_inf): void => {
+		slideInWithFadeIn(section);
+	});
 });
 
 inView($servizi, (_inf): void => {
