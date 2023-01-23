@@ -21,10 +21,6 @@
 		dropdown.classList.toggle('active-dropdow-navbar');
 		dropdown.animate(fadeInAnimation, fadeInOptions);
 	}
-
-	onMount(() => {
-		console.log(dropdown);
-	});
 </script>
 
 <nav class="navbar">

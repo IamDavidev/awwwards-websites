@@ -33,7 +33,6 @@
 			return (activeTestimonial = TESTIMONAILS.length - 1);
 		activeTestimonial = activeTestimonial - 1;
 	}
-	console.log(activeTestimonial);
 </script>
 
 <section class="container f-c-c-c">
