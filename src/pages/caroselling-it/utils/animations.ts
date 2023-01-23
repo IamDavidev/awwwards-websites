@@ -3,7 +3,7 @@ import {
 	slideBottomWithFadeIn,
 	slideInWithFadeIn,
 } from '@utils/animations';
-import { $ } from '@utils/domSelectors';
+import { $, $$ } from '@utils/domSelectors';
 import { inView, scroll } from 'motion';
 
 const $nabar = $('.nav') as HTMLElement;
@@ -18,7 +18,8 @@ const $sectionDescription = $('.container-des') as HTMLElement;
 
 const $wrapperImg = $('.ani-ind') as HTMLElement;
 const $imgParallax = $('.parallax-img') as HTMLElement;
-console.info('🚀 ~>  file: animations.ts:21 ~>  $imgParallax', $imgParallax);
+
+const $gridNumberItme = $$('.ani-grid-number');
 
 fadeIn($nabar);
 slideInWithFadeIn($headerTitle);
@@ -31,6 +32,12 @@ inView($sectionDescription, (_inf): void => {
 
 inView($servizi, (_inf): void => {
 	slideBottomWithFadeIn($servizi);
+});
+
+$gridNumberItme.forEach(item => {
+	inView(item, (_inf): void => {
+		slideBottomWithFadeIn(item);
+	});
 });
 
 scroll(
