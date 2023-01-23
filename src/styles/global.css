@@ -83,6 +83,8 @@ section {
 	align-items: center;
 	flex-direction: column;
 }
+
+/* utils */
 .block {
 	display: block;
 }
