@@ -17,7 +17,7 @@
 	.container {
 		gap: 2px;
 		display: flex;
-		justify-content: start;
+		justify-content: flex-start;
 		align-items: center;
 		flex-direction: row;
 	}
