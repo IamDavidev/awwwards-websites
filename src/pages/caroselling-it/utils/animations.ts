@@ -1,10 +1,10 @@
+import { inView, scroll } from 'motion';
 import {
 	fadeIn,
 	slideBottomWithFadeIn,
 	slideInWithFadeIn,
 } from '@utils/animations';
 import { $, $$ } from '@utils/domSelectors';
-import { inView, scroll } from 'motion';
 
 const $nabar = $('.nav') as HTMLElement;
 
@@ -22,10 +22,6 @@ const $imgsParallax = $$('.parallax-img');
 const $gridNumberItme = $$('.ani-grid-number');
 
 const $headersLetter = $$('.ani-header-lettere');
-console.info('🚀 ~>  file: animations.ts:25 ~>  art', $headersLetter);
-// const img = art.querySelector('img') as HTMLElement;
-
-// const img =;
 
 fadeIn($nabar);
 slideInWithFadeIn($headerTitle);
