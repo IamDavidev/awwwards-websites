@@ -46,6 +46,8 @@
 	/* divider */
 	--divider-color: #fff;
 	--divider-margin: 3rem 0;
+
+	--bt-primary: 1px solid #fff;
 }
 
 body {
