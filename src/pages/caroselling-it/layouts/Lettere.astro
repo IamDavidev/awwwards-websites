@@ -1,4 +1,6 @@
 ---
+import ButtonMore from '../components/ButtonMore.astro';
+
 // cosole.log(Array.from({ length: 4 }).fill('null'));
 const itemsCount = Array.from({ length: 4 }).fill('null');
 ---
@@ -37,6 +39,9 @@ const itemsCount = Array.from({ length: 4 }).fill('null');
 			})
 		}
 	</div>
+	<footer>
+		<ButtonMore />
+	</footer>
 </section>
 
 <style>
@@ -98,5 +103,9 @@ const itemsCount = Array.from({ length: 4 }).fill('null');
 				}
 			}
 		}
+	}
+	footer {
+		display: flex;
+		justify-content: center;
 	}
 </style>
